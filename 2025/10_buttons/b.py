@@ -17,7 +17,7 @@ def conv_buttons(input):
 def conv_joltage(input):
     value = 1
     for i, b in enumerate(input):
-        value *= int(b) * primes[i]
+        value *= primes[i] ** int(b)
     print(f"conv_joltage {input} → {value}")
     return value
 
